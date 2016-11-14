@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <form action="mailto:qa@projectbeaglecom">
+        <h3>Dummy Test Form</h3>
+        <br> First name: *
+        <br>
+        <input type="text" name="firstname" value="">
+        <br> Last name: *
+        <br>
+        <input id="lastname" type="text" name="lastname" value="">
+        <br> Years of Experience:
+        <br>
+        <input type="number" name="experience" value="">
+		<br> Sex:
+        <br>
+		<input type="radio" name="genderl" value="male"> Male <input type="radio" name="gender" value="female"> Female 
+        <br>
+        <br>
+        
+        <input id="submit" type="submit" value="Submit">
+        <input type="reset" value="Reset">
+		<br><span>* Mandatory fields</span>
+        <img src="bugImg.jpg"></img>
+    </form>
+
+
+
+    <h4>1. Write Test Cases for the above form.  If you are familiar with Gherkin syntax (cucumber) please write the cases in Gherkin <h4>
+  <h4>2.  Report ANY bugs or issues you may experience</h4>
+
+    <p>Note: If you click the "Submit" button, it will try to send a mail. There is no need to actually send it.</p>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+form {
+  width:250px;
+  margin:10px;
+  padding:0 10px 30px 20px;
+  border:1px solid;
+}
+
+img {
+  display:none;
+}
+
+#lastname {
+margin-left:5px;
+}
