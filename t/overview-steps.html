@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>1</td>
+                        <td>18 Νοε 2016, 10:32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iClickDeleteLastBook()</td>
+              <td>1</td>
+              <td class="duration" data-value="88377308">088ms</td>
+              <td class="duration" data-value="88377308">088ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iClickOnCancelBookButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="142300624">142ms</td>
+              <td class="duration" data-value="142300624">142ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iClickOnCreateBook()</td>
+              <td>10</td>
+              <td class="duration" data-value="2566085477">2s 566ms</td>
+              <td class="duration" data-value="256608547">256ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iClickOnEditLastBook()</td>
+              <td>2</td>
+              <td class="duration" data-value="387413265">387ms</td>
+              <td class="duration" data-value="193706632">193ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iClickOnUpdateBook()</td>
+              <td>1</td>
+              <td class="duration" data-value="100209322">100ms</td>
+              <td class="duration" data-value="100209322">100ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iInputTheBookDetails(DataTable)</td>
+              <td>7</td>
+              <td class="duration" data-value="2269800469">2s 269ms</td>
+              <td class="duration" data-value="324257209">324ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iSearchBook(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="285707729">285ms</td>
+              <td class="duration" data-value="285707729">285ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iSearchLastBook()</td>
+              <td>1</td>
+              <td class="duration" data-value="111958371">111ms</td>
+              <td class="duration" data-value="111958371">111ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iShouldBeInBooksPage()</td>
+              <td>10</td>
+              <td class="duration" data-value="10502085234">10s 502ms</td>
+              <td class="duration" data-value="1050208523">1s 050ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iShouldBeInCreateBookPage()</td>
+              <td>5</td>
+              <td class="duration" data-value="202457122">202ms</td>
+              <td class="duration" data-value="40491424">040ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iShouldNotSeeLastBook()</td>
+              <td>3</td>
+              <td class="duration" data-value="48151829014">48s 151ms</td>
+              <td class="duration" data-value="16050609671">16s 050ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookPageStepDefinitions.iShouldSeeLastBook()</td>
+              <td>2</td>
+              <td class="duration" data-value="176704153">176ms</td>
+              <td class="duration" data-value="88352076">088ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CommonStepDefinitions.iMUsingBrowser(String)</td>
+              <td>13</td>
+              <td class="duration" data-value="200308774183">3m 20s 308ms</td>
+              <td class="duration" data-value="15408367244">15s 408ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CommonStepDefinitions.iNavigateTo(String)</td>
+              <td>13</td>
+              <td class="duration" data-value="18594156037">18s 594ms</td>
+              <td class="duration" data-value="1430319695">1s 430ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.afterScenario()</td>
+              <td>13</td>
+              <td class="duration" data-value="5303957097">5s 303ms</td>
+              <td class="duration" data-value="407996699">407ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickBooksLastAuthor()</td>
+              <td>6</td>
+              <td class="duration" data-value="3205680485">3s 205ms</td>
+              <td class="duration" data-value="534280080">534ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickDeleteLastAuthor()</td>
+              <td>1</td>
+              <td class="duration" data-value="126009332">126ms</td>
+              <td class="duration" data-value="126009332">126ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickEditLastAuthor()</td>
+              <td>2</td>
+              <td class="duration" data-value="211604046">211ms</td>
+              <td class="duration" data-value="105802023">105ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickOnAuthors()</td>
+              <td>2</td>
+              <td class="duration" data-value="259416488">259ms</td>
+              <td class="duration" data-value="129708244">129ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickOnCancelButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="98226438">098ms</td>
+              <td class="duration" data-value="98226438">098ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickOnCreateAuthorButton()</td>
+              <td>10</td>
+              <td class="duration" data-value="4049176941">4s 049ms</td>
+              <td class="duration" data-value="404917694">404ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickOnCreateButton()</td>
+              <td>10</td>
+              <td class="duration" data-value="978214510">978ms</td>
+              <td class="duration" data-value="97821451">097ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickOnReturnButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="841099604">841ms</td>
+              <td class="duration" data-value="420549802">420ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iClickOnUpdateButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="106557685">106ms</td>
+              <td class="duration" data-value="106557685">106ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iInputTheAuthorSDetails(DataTable)</td>
+              <td>12</td>
+              <td class="duration" data-value="6575670887">6s 575ms</td>
+              <td class="duration" data-value="547972573">547ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iSearch(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="446878391">446ms</td>
+              <td class="duration" data-value="446878391">446ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleActions.iSearchLastAuthor()</td>
+              <td>1</td>
+              <td class="duration" data-value="253781448">253ms</td>
+              <td class="duration" data-value="253781448">253ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleValidations.iShouldBeInAddAuthorPage()</td>
+              <td>5</td>
+              <td class="duration" data-value="452433031">452ms</td>
+              <td class="duration" data-value="90486606">090ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleValidations.iShouldBeInAuthorPage()</td>
+              <td>8</td>
+              <td class="duration" data-value="4692846339">4s 692ms</td>
+              <td class="duration" data-value="586605792">586ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleValidations.iShouldBeInEditAuthorPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="207701286">207ms</td>
+              <td class="duration" data-value="103850643">103ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleValidations.iShouldBeInHomePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="75077020">075ms</td>
+              <td class="duration" data-value="75077020">075ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleValidations.iShouldNotSeeLastAuthor()</td>
+              <td>3</td>
+              <td class="duration" data-value="48099810180">48s 099ms</td>
+              <td class="duration" data-value="16033270060">16s 033ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SpringBootExampleValidations.iShouldSeeLastAuthor()</td>
+              <td>3</td>
+              <td class="duration" data-value="632704665">632ms</td>
+              <td class="duration" data-value="210901555">210ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>33</td>
+            <td>154</td>
+            <td class="duration">6m 504ms</td>
+            <td class="duration">2s 340ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

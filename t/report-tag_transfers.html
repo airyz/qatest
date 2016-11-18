@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @transfers</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>1</td>
+                        <td>18 Νοε 2016, 10:32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Tag Report</h2>
+          </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@transfers</td>
+                    <td      class="passed"    >40</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">40</td>
+
+          <td  class="passed"    >5</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td class="duration" data-value="59270967675">59s 270ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="report-feature_C--Users-eraclis-Documents-Projects-SpringBootExample-spring-boot-testing-src-test-resources-com-projectbeagle-automation-features-bookstore-book-feature_10_1.html">View Feature</a> <i>Test Author Book Page</i>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Edit a Book</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">106ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Create Book Page</span>
+  
+  <span class="lead-duration duration">028ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I input the Book Details</span>
+  
+  <span class="lead-duration duration">221ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>BookTitle</td>
+                                  <td>NumberOfPages</td>
+                              </tr>
+                          <tr>
+                                  <td>RandomName</td>
+                                  <td>953</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">092ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Books Page</span>
+  
+  <span class="lead-duration duration">1s 039ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click on Edit last book</span>
+  
+  <span class="lead-duration duration">108ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I input the Book Details</span>
+  
+  <span class="lead-duration duration">657ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>BookTitle</td>
+                                  <td>NumberOfPages</td>
+                              </tr>
+                          <tr>
+                                  <td>RandomName</td>
+                                  <td>953</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Update Book</span>
+  
+  <span class="lead-duration duration">100ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see last book</span>
+  
+  <span class="lead-duration duration">140ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click on Edit last book</span>
+  
+  <span class="lead-duration duration">278ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I input the Book Details</span>
+  
+  <span class="lead-duration duration">378ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>BookTitle</td>
+                                  <td>NumberOfPages</td>
+                              </tr>
+                          <tr>
+                                  <td>RandomName</td>
+                                  <td>953</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Cancel book button</span>
+  
+  <span class="lead-duration duration">142ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should not see last book</span>
+  
+  <span class="lead-duration duration">16s 055ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-3" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SpringBootExampleActions.afterScenario()</span>
+                        
+  <span class="lead-duration duration">376ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="report-feature_C--Users-eraclis-Documents-Projects-SpringBootExample-spring-boot-testing-src-test-resources-com-projectbeagle-automation-features-bookstore-book-feature_11_2.html">View Feature</a> <i>Test Author Book Page</i>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete a Book</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">096ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Create Book Page</span>
+  
+  <span class="lead-duration duration">028ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I input the Book Details</span>
+  
+  <span class="lead-duration duration">234ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>BookTitle</td>
+                                  <td>NumberOfPages</td>
+                              </tr>
+                          <tr>
+                                  <td>RandomName</td>
+                                  <td>953</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">186ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Books Page</span>
+  
+  <span class="lead-duration duration">1s 031ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click delete last book</span>
+  
+  <span class="lead-duration duration">088ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Books Page</span>
+  
+  <span class="lead-duration duration">1s 027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should not see last book</span>
+  
+  <span class="lead-duration duration">16s 031ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-6" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SpringBootExampleActions.afterScenario()</span>
+                        
+  <span class="lead-duration duration">497ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="report-feature_C--Users-eraclis-Documents-Projects-SpringBootExample-spring-boot-testing-src-test-resources-com-projectbeagle-automation-features-bookstore-book-feature_12_3.html">View Feature</a> <i>Test Author Book Page</i>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Search a book</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">082ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Create Book Page</span>
+  
+  <span class="lead-duration duration">042ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I input the Book Details</span>
+  
+  <span class="lead-duration duration">233ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>BookTitle</td>
+                                  <td>NumberOfPages</td>
+                              </tr>
+                          <tr>
+                                  <td>RandomName</td>
+                                  <td>953</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">101ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Books Page</span>
+  
+  <span class="lead-duration duration">1s 084ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I search last book</span>
+  
+  <span class="lead-duration duration">111ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see last book</span>
+  
+  <span class="lead-duration duration">036ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">1s 479ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Create Book Page</span>
+  
+  <span class="lead-duration duration">030ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I input the Book Details</span>
+  
+  <span class="lead-duration duration">317ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>BookTitle</td>
+                                  <td>NumberOfPages</td>
+                              </tr>
+                          <tr>
+                                  <td>RandomName</td>
+                                  <td>953</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">174ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I search book "$%#$%#$%"</span>
+  
+  <span class="lead-duration duration">285ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should not see last book</span>
+  
+  <span class="lead-duration duration">16s 064ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-9" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SpringBootExampleActions.afterScenario()</span>
+                        
+  <span class="lead-duration duration">449ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="report-feature_C--Users-eraclis-Documents-Projects-SpringBootExample-spring-boot-testing-src-test-resources-com-projectbeagle-automation-features-bookstore-book-feature_8_11.html">View Feature</a> <i>Test Author Book Page</i>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Return to Author</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I click on Return button</span>
+  
+  <span class="lead-duration duration">118ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Author Page</span>
+  
+  <span class="lead-duration duration">487ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SpringBootExampleActions.afterScenario()</span>
+                        
+  <span class="lead-duration duration">338ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="report-feature_C--Users-eraclis-Documents-Projects-SpringBootExample-spring-boot-testing-src-test-resources-com-projectbeagle-automation-features-bookstore-book-feature_9_12.html">View Feature</a> <i>Test Author Book Page</i>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a Book</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">128ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be in Create Book Page</span>
+  
+  <span class="lead-duration duration">072ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I input the Book Details</span>
+  
+  <span class="lead-duration duration">226ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>BookTitle</td>
+                                  <td>NumberOfPages</td>
+                              </tr>
+                          <tr>
+                                  <td>RandomName</td>
+                                  <td>953</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on Create Book</span>
+  
+  <span class="lead-duration duration">117ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-15" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SpringBootExampleActions.afterScenario()</span>
+                        
+  <span class="lead-duration duration">403ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
